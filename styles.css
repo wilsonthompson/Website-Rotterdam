@@ -1,0 +1,85 @@
+/* Stijlen voor mobiele apparaten (mobile-first) */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-image: url('https://rotterdammakeithappen.nl/app/uploads/2018/06/2009_bruggen74_mh_Marc-Heeman-855x570.jpg'); /* Willemsbrug achtergrond */
+    background-size: cover;
+    background-position: center center; /* Zorg ervoor dat de brug goed gecentreerd is */
+    height: 150px; /* Maak de header groter zodat de brug duidelijker zichtbaar is */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem; /* Maak de titel groter voor een prominente uitstraling */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Voeg schaduw toe voor betere leesbaarheid */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.left-column {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.left-column h2 {
+    margin-top: 0;
+}
+
+.left-column ul {
+    list-style-type: square;
+}
+
+.right-column {
+    background-color: #e0e0e0;
+    padding: 15px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.large-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Media query voor grotere schermen (responsive) */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-column {
+        width: 25%;
+    }
+
+    .right-column {
+        width: 70%;
+    }
+}
